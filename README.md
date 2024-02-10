@@ -15,6 +15,9 @@ To build the images and run the containers in the development server, run the fo
 $ docker-compose up -d --build
 ```
 
+The development build mounts the web folder in the container, allowing for automatic updates.
+
+
 - docker-compose: Runs multi-container Docker apps.
 - up: Runs containers.
 - -d: Runs containers in the background.
@@ -26,4 +29,4 @@ To do the same for the production server, run the following command, which uses 
 $ docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
-
+The production build uses Gunicorn and Nginx. Unlike the development server, you must rebuild the image to apply changes.
