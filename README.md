@@ -15,10 +15,10 @@ To build the images and run the containers in the development server, run the fo
 $ docker-compose up -d --build
 ```
 
-docker-compose: Runs multi-container Docker apps.
-up: Runs containers.
--d: Runs containers in the background.
---build: Builds images.
+- docker-compose: Runs multi-container Docker apps.
+- up: Runs containers.
+- -d: Runs containers in the background.
+- --build: Builds images.
 
 To do the same for the production server, run the following command, which uses the docker-compose.prod.yml file:
 
