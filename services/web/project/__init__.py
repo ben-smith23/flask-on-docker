@@ -29,9 +29,11 @@ class User(db.Model):
 def hello_world():
     return jsonify(salve="munde")
 
+
 @app.route("/static/<path:filename>")
 def staticfiles(filename):
     return send_from_directory(app.config["STATIC_FOLDER"], filename)
+
 
 @app.route("/media/<path:filename>")
 def mediafiles(filename):
